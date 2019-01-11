@@ -7,12 +7,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Calculator</title>
+<script src="funcfile.js"></script>
 </head>
 <body>
     <form>
-        <input type="text" id="firstnumber" name="number" >
-        <input type="text" id="scnumber" name="number" >
+        <h4>Caculator</h4>
+        <input id="fnumber" type="text" name="number" >
+        <input  id="snumber" type="text" name="number" >
+        <button type="button" onclick="cong();">Addition (+)</button>
+        <button type="button" onclick= tru(); >Subtraction (-)</button>
+        <button type="button" onclick=" nhan();">Multiplication (X)</button>
+        <button type="button" onclick=" chia();">Divition (/)</button>
 
+        <p id="idresult">
+                Result:
+        </p>
     </form>
 
 </body>
