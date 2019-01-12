@@ -37,17 +37,26 @@ function tinhToan(clicked_id) {
     dataout=parseInt(document.getElementById("snumber").value);
 
 
-    if(clicked_id == "idcong" && datain!="NaN"){
-        document.write(datain)
-        var chia=document.getElementById('idresult');
+    if(clicked_id == "idcong"){
+        var result=document.getElementById('idresult');
 
         var tong= datain + dataout;
-        chia.innerHTML="Result:" + tong;
+        result.innerHTML="Result: " + tong;
     }
     else if (clicked_id=="idtru"){
-        var chia=document.getElementById('idresult');
+        var result=document.getElementById('idresult');
         var hieu= datain - dataout;
-        chia.innerHTML="Result:" + hieu;
+        result.innerHTML="Result: " + hieu;
+    }
+    else if (clicked_id=="idnhan"){
+        var result=document.getElementById('idresult');
+        var tich= datain * dataout;
+        result.innerHTML="Result: " + tich;
+    }
+    else if (clicked_id=="idchia"){
+        var result=document.getElementById('idresult');
+        var thuong= datain/dataout;
+        result.innerHTML="Result: " + thuong;
     }
 
 }
