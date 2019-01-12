@@ -1,4 +1,4 @@
-
+/*
 function cong() {
     datain=document.getElementById("fnumber").value;
     dataout=document.getElementById("snumber").value;
@@ -31,5 +31,23 @@ function chia() {
     var chia=document.getElementById('idresult');
     chia.innerHTML=int;
 }
-function tinhToan() {
+*/
+function tinhToan(clicked_id) {
+    datain=parseInt(document.getElementById("fnumber").value);
+    dataout=parseInt(document.getElementById("snumber").value);
+
+
+    if(clicked_id == "idcong" && datain!="NaN"){
+        document.write(datain)
+        var chia=document.getElementById('idresult');
+
+        var tong= datain + dataout;
+        chia.innerHTML="Result:" + tong;
+    }
+    else if (clicked_id=="idtru"){
+        var chia=document.getElementById('idresult');
+        var hieu= datain - dataout;
+        chia.innerHTML="Result:" + hieu;
+    }
+
 }
